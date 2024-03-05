@@ -1,2 +1,3 @@
 # mercury-ds
-Mercury Design System designed for GeneXus IDE Web
+Mercury is the design system designed for GeneXus IDE Web and GeneXus Next.
+
