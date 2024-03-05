@@ -117,7 +117,6 @@
   --mer-elevation__box-shadow--04: 0px 5px 22px 4px rgba(0, 0, 0, 0.12),
     0px 7px 8px -4px rgba(0, 0, 0, 0.1);
 }
-
 :root.dark {
   /*background color*/
   --mer-elevation__background-color--01: var(--mer-color__elevation--01);
@@ -173,16 +172,16 @@
 }
 
 :root {
-  --mer-spacing--xxxs: 2px;
-  --mer-spacing--xs2: 4px;
+  --mer-spacing--3xs: 2px;
+  --mer-spacing--2xs: 4px;
   --mer-spacing--xs: 8px;
   --mer-spacing--sm: 12px;
   --mer-spacing--md: 16px;
   --mer-spacing--lg: 24px;
   --mer-spacing--xl: 32px;
-  --mer-spacing--xxl: 40px;
-  --mer-spacing--xxxl: 48px;
-  --mer-spacing--xxxxl: 64px;
+  --mer-spacing--2xl: 40px;
+  --mer-spacing--3xl: 48px;
+  --mer-spacing--4xl: 64px;
 }
 
 :root {
@@ -264,6 +263,46 @@
   --mer-text__neutral: var(--mer-color__neutral-gray--200);
   --mer-text__highlighted: var(--mer-color__neutral-gray--100);
   --mer-text__bright: var(--mer-color__neutral-gray--00);
+}
+
+:root {
+  --shortcuts-tooltip__padding-inline-start: var(--mer-spacing--2xs);
+  --shortcuts-key__color: var(--mer-color__neutral-gray--900);
+  --shortcuts-key__background-color: var(--mer-color__message-red--100);
+  --shortcuts-key__border-radius: var(--mer-border__radius--md);
+  --shortcuts-key__font-size: var(--mer-font__size--xs);
+  --shortcuts-key__padding: var(--mer-spacing--2xs);
+  --shortcuts-slash__font-size: var(--mer-font__size--xs);
+  --shortcuts-slash__color: var(--mer-color__message-red--100);
+  --shortcuts-slash__padding: var(--mer-spacing--2xs);
+  --shortcuts-element__outline: var(--mer-border__width--md) dotted
+    var(--mer-color__tinted-yellow--60);
+  --shortcuts-element__outline-offset: -1px;
+}
+
+ch-shortcuts::part(tooltip) {
+  display: flex;
+  padding-inline-start: var(--shortcuts-tooltip__padding-inline-start);
+}
+
+ch-shortcuts::part(key) {
+  color: var(--shortcuts-key__color);
+  background-color: var(--shortcuts-key__background-color);
+  border-radius: var(--shortcuts-key__border-radius);
+  font-size: var(--shortcuts-key__font-size);
+  padding: var(--shortcuts-key__padding);
+}
+
+ch-shortcuts::part(slash),
+ch-shortcuts::part(plus) {
+  font-size: var(--shortcuts-slash__font-size);
+  color: var(--shortcuts-slash__color);
+  padding: var(--shortcuts-slash__padding);
+}
+
+ch-shortcuts::part(element) {
+  outline: var(--shortcuts-element__outline);
+  outline-offset: var(--shortcuts-element__outline-offset);
 }
 
 /*# sourceMappingURL=mercury-ds.css.map */
