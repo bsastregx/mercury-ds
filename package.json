@@ -1,0 +1,27 @@
+{
+  "name": "mercury-ds",
+  "version": "1.0.0",
+  "description": "Mercury is the design system for GeneXus IDE Web and GeneXus Next.",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch ./src/tokens.scss ./dist/mercury-ds.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsastregx/mercury-ds.git"
+  },
+  "keywords": [
+    "mercury",
+    "design-system"
+  ],
+  "author": "GeneXus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bsastregx/mercury-ds/issues"
+  },
+  "homepage": "https://github.com/bsastregx/mercury-ds#readme",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}
